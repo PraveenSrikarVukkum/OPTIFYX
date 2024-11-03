@@ -1,0 +1,175 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #038fec;
+    color: #000000;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #051358;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-shadow: #051358;
+    border-radius: 8px;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 400px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styling */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Section titles */
+h2 {
+    border-bottom: 2px solid #0077b5;
+    /* LinkedIn blue */
+    color: #0077b5;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Project and experience sections */
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project:hover {
+    background-color: #e8f5fd;
+    /* Light blue on hover */
+    cursor: pointer;
+}
+
+.project-img {
+    width: 100%;
+    /* Responsive image */
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-details {
+    display: none;
+    /* Hide by default */
+    margin-top: 10px;
+}
+
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0077b5;
+    /* LinkedIn blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005582;
+    /* Darker blue on hover */
+}
+
+/* Form message */
+.form-message {
+    margin-top: 10px;
+    color: green;
+    /* Success message color */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .project-img {
+        height: auto;
+    }
+}

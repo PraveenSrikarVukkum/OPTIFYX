@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vukkum Praveen Srikar - Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Vukkum Praveen Srikar</h1>
+        <p>Eluru, Andhra Pradesh 534001 | +91 9573055478</p>
+        <p><a href="mailto:praveensreekar05@gmail.com">praveensreekar05@gmail.com</a> | <a
+                href="https://linkedin.com/in/praveensrikarvukkum"
+                target="_blank">linkedin.com/in/praveensrikarvukkum</a></p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Detail-oriented BTech Computer Science student with proficiency in Python, HTML, and Java, experienced in
+                Front-End Development and Machine Learning internships. Passionate about Cybersecurity, Technology
+                Innovation, and Research & Development, seeking an entry-level position to apply technical skills and
+                problem-solving abilities.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project" onclick="toggleDetails(this)">
+                <h3>Machine Learning-Based Crop Yield Prediction System</h3>
+                <img src="crop-yield.jpg" alt="Crop Yield Prediction" class="project-img">
+                <p class="project-details">Developed the Front End for a machine learning system that improved crop
+                    yield predictions by 25% and reduced analysis time by 40%. The system assists farmers in optimizing
+                    crop growth using real-time environmental data.</p>
+                <p><strong>Technologies:</strong> Python, NumPy, HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project" onclick="toggleDetails(this)">
+                <h3>YogaSana Website</h3>
+                <img src="yogasana.jpg" alt="YogaSana Website" class="project-img">
+                <p class="project-details">Designed the Front End for YogaSana, increasing user engagement by 30% and
+                    reducing load time by 20%. Enabled over 20 instructors to showcase their services, improving
+                    interaction by 40% and user satisfaction by 25%.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project" onclick="toggleDetails(this)">
+                <h3>Customer Churn Prediction</h3>
+                <img src="customer-churn.jpg" alt="Customer Churn Prediction" class="project-img">
+                <p class="project-details">Developed predictive models to analyze customer behavior and reduce churn,
+                    enhancing customer retention strategies by 15%.</p>
+                <p><strong>Technologies:</strong> Python, Scikit-learn, Pandas</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>ML Intern – Apna Guide</strong> (Jun 2024 – Jul 2024)
+                    <ul>
+                        <li>Worked on Customer Churn Prediction, Rainfall Prediction, and Predictive Management.</li>
+                    </ul>
+                </li>
+                <li><strong>Android Dev Intern – Google Devs</strong> (Jan 2024 – Mar 2024)
+                    <ul>
+                        <li>Developed apps with Kotlin, implemented SQL Room, and used Work Manager for background
+                            tasks.</li>
+                    </ul>
+                </li>
+                <li><strong>AI-ML Intern – Google Devs</strong> (Jan 2024 – Jun 2024)
+                    <ul>
+                        <li>Built models for neural networks, object detection, and image classification using
+                            TensorFlow.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Core Skills</h2>
+            <p>Python, Basics of Java, HTML, SQL: Basic Concepts like Commands, DDL, DML, DQL, Visual Studio, PyCharm,
+                Google Colab, Quick Learner, Proactive and Initiative-Taker, Strong Team Collaboration Skills</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Ramachandra College of Engineering</strong> (Dec 2020 - May 2024)
+                    <ul>
+                        <li>Bachelor of Technology | JNTUK (Computer Science and Engineering)</li>
+                    </ul>
+                </li>
+                <li><strong>NRI Junior College</strong> (Jun 2018 - Mar 2020)
+                    <ul>
+                        <li>Higher Secondary School | BIEAP (MPC)</li>
+                    </ul>
+                </li>
+                <li><strong>Vijayawada's Ravindra Bharathi Public School</strong> (Jun 2017 - Mar 2018)
+                    <ul>
+                        <li>Secondary School | BSEAP (SSC)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vukkum Praveen Srikar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
